@@ -8,12 +8,12 @@ from keras.preprocessing.image import load_img
 
 
 aug = ImageDataGenerator(
-	rotation_range=3,
-	zoom_range=0.08,
-	#width_shift_range=0.1,
-	#height_shift_range=0.1,
-	#shear_range=0.10,
-	#horizontal_flip=True,
+	rotation_range=30,
+	zoom_range=0.15,
+	width_shift_range=0.1,
+	height_shift_range=0.1,
+	shear_range=0.10,
+	horizontal_flip=True,
 	fill_mode="nearest")
 
 imgs = os.listdir('/home/vs/Desktop/pan images/rawimage/')
